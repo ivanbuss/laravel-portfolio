@@ -1,0 +1,61 @@
+version: "2.0"
+services:
+  application:
+      build: docker/containers/code
+      volumes:
+          - ./:/var/www/html
+          - ./docker/shared/dumps/files:/var/www/dumps/files
+      tty: true
+  db:
+      image: mariadb:latest
+      environment:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: admin
+          MYSQL_PASSWORD: admin
+          MYSQL_DATABASE: laravel
+      volumes:
+          - ./docker/shared/db/entrypoint:/docker-entrypoint-initdb.d
+      tty: true
+  elastic:
+      build: docker/containers/elastic
+      links:
+          - db:db
+      volumes_from:
+          - application
+      ports:
+          - "127.0.0.51:9200:9200"
+          - "127.0.0.51:9300:9300"
+  kibana:
+      build: docker/containers/kibana
+      ports:
+          - "127.0.0.50:5601:5601"
+      environment:
+          - ELASTICSEARCH_URL=http://elastic:9200
+      links:
+          - elastic
+  php:
+      build: docker/containers/php-fpm
+      volumes_from:
+          - application
+      links:
+          - db:db
+          - elastic:elastic
+  nginx:
+      build: docker/containers/nginx
+      ports:
+          - "127.0.0.50:8080:80"
+          - "127.0.0.50:8443:443"
+      links:
+          - php:php
+      volumes_from:
+          - application
+  adminer:
+      image: clue/adminer
+      ports:
+          - "127.0.0.50:8082:80"
+      links:
+          - db
+      volumes:
+          - ./docker/shared/adminer:/var/www/shared
+
+

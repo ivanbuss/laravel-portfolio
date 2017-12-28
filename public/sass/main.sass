@@ -1,0 +1,1217 @@
+//@import 'main-fonts'
+@font-face
+	font-family: 'KeepCalm-Medium'
+	src: url('../fonts/KeepCalm-Medium.ttf')
+
+$white-color: #ffffff
+$black-color : #000000
+$deep-red-color: #a01d1c
+$light-red-color: #f05a41
+$grey-color: #8c8c8c
+$light-grey-color : #dce0e0
+$light-grey-bg : #d2d2d2
+$blue-color :#3b5998
+$light-blue-color :#337ab7
+
+//*footer to bottom*/
+html
+	position: relative
+	min-height: 100%
+//
+body
+	margin-bottom: 148px !important
+
+footer
+	position: absolute
+	bottom: 0
+	width: 100%
+	height: 175px
+	padding: 25px 0 75px 0
+
+/**/
+
+.btn-red
+	background: $deep-red-color
+	color: white
+	padding: 15px 25px
+	border-radius: 0
+	text-align: center
+	&:hover
+		background: #f05a41
+		color: #ffffff
+		text-decoration: none
+		cursor: pointer
+
+.btn-blue
+	background: $blue-color
+	color: $white-color
+	padding: 15px 25px
+	border-radius: 0
+	text-align: center
+	&:hover
+		background: $light-blue-color
+		color: $white-color
+
+.red-bg
+	background: $deep-red-color
+
+.white-bg
+	background: $white-color
+
+.grey-bg
+	background: $light-grey-bg
+
+.box-shadow-bottom
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+
+.box-shadow-top-inner
+	box-shadow: inset  0  8px 8px -8px rgba(0, 0, 0, 0.2)
+
+.box-shadow-top
+	box-shadow:  0 6px 4px -4px rgba(0, 0, 0, .2)
+
+.hidden-element
+	display: none
+
+html body
+	font-size: 14px
+	font-family: KeepCalm-Medium
+	color: $black-color
+	h1, h2, h3, h4, h5, h6, p, .btn, a
+		font-family: KeepCalm-Medium
+
+.container
+//width: 2176px
+
+.no-padding
+	padding: 0
+
+.no-right-padding
+	padding-right: 0
+.no-margin
+
+	margin: 0
+
+/*headers*/
+
+.main-header, .header-white, .header-transparent
+	.navbar
+		.navbar-brand
+			padding-top: 10px
+		.nav > li
+			padding-left: 20px
+			&.dropdown
+				padding-left: 0
+				color: #ffffff
+				ul.dropdown-menu
+					min-width: 150px
+					border-radius: 0
+					padding-top: 0
+					border: 0
+					li
+						&:first-child
+							background: #ededed
+							a
+								font-weight: bold
+								color: $black-color
+						a
+							font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+							padding: 10px 10px
+							font-size: 1em
+			//&:first-child
+			//	background: url("../img/menu-bg-item-1.png") no-repeat left center
+			//&:nth-of-type(2)
+			//	background: url("../img/menu-bg-item-2.png") no-repeat left center
+			//&:nth-of-type(3)
+			//	background: url("../img/menu-bg-item-3.png") no-repeat left center
+			//&:nth-of-type(4)
+			//	background: url("../img/menu-bg-item-4.png") no-repeat left center
+			& > a
+				text-transform: uppercase
+				color: #ffffff
+				font-size: 0.8em
+				&:hover
+					text-decoration: underline
+					background: none
+		.header-avatar
+			width: 20px
+			height: 20px
+		/*search input in header*/
+		#header-search
+			height: 50px
+			line-height: 50px
+			vertical-align: middle
+			.header-search-input
+				display: inline-block
+				width: 150px
+				height: 30px
+				background: rgba(0, 0, 0, 0) url("../img/magnifier.png") no-repeat scroll 10px 6px
+				border: 1px solid #d1d1d1
+				border-radius: 20px
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset
+				line-height: 0
+				padding: 6px 15px 6px 35px
+				text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1)
+				//transition: all 0.7s ease 0s
+				color: $black-color
+
+
+	.header-main-info
+		display: table
+		height: 450px
+		width: 100%
+		text-align: center
+		.inner
+			display: table-cell
+			vertical-align: middle
+			color: $white-color
+			h2
+				font-size: 4em
+				font-family: KeepCalm-Medium
+			h6
+				font-size: 1em
+				margin: 30px 0
+			.btn
+				font-size: 1em
+	.search-wrapper
+		background: rgba(0,0,0,0.5)
+		padding: 20px 0
+		.input-group
+			width: 90%
+			margin: 0 auto
+			.form-control
+				height: 45px
+			.btn, input
+				border-radius: 0
+				height: 45px
+				font-size: 1em
+				border: 4px solid #000000
+			.input-group-btn
+				font-size: 1em
+			input
+				border-right: none
+			.btn
+				background: $deep-red-color
+				color: white
+				padding:  6px 27px
+				border-left: none
+				font-size: 1em
+				&:hover, &:focus, &.focus, &.active
+					background: $light-red-color
+
+.main-header
+	background: url("../img/bg1.jpg") no-repeat center center
+	background-size: cover
+/*header white*/
+.header-white
+	background: $white-color
+	border-bottom: 2px solid $grey-color
+	.navbar .nav > li > a
+		color: $black-color
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+/*header transparent*/
+.header-transparent
+	//position: absolute
+	background: rgba(0,0,0,0)
+	border-bottom: none
+/**/
+.main
+	background: url("../img/bg2.jpg") no-repeat center top #d2d2d2
+	background-size: cover
+	padding-top: 25px
+	h4
+		font-size: 1.4em
+	.main-numbers
+		text-align: center
+		h3
+			font-size: 2.7em
+			color: #000000
+		.numbers-item
+			margin: 35px 0
+			font-family: KeepCalm-Medium
+			.number
+				font-size: 7em
+				color: $deep-red-color
+				display: block
+				.comma
+					color: #000000
+			.number-description
+				font-size: 2.5em
+				color: #000000
+
+	.recently-added-block, .recently-collected-block
+		border-top: #1f1f1f solid 5px
+		padding: 50px 0
+		text-align: center
+		h4
+			margin-bottom: 35px
+			font-size: 1.8em
+			text-transform: uppercase
+/*cards with front and back images*/
+.cards
+
+	.item-wrapper
+		margin: 0 auto
+		margin-bottom: 25px
+		//width: 255px
+		height: 360px
+		position: relative
+		&:hover
+			cursor: pointer
+	.card-wrapper
+		height: 357px
+		margin-bottom: 40px
+		.decks-description
+			display: none
+			width: calc(100% - 30px)
+			padding: 10px 0
+			background: rgba(210,210,210, 0.5)
+			position: absolute
+			bottom: 0
+			text-align: center
+			.deck-title
+				display: block
+				margin-bottom: 15px
+			.collection-icon-wrapper
+				display: inline-block
+				.collection-deck-icon
+					background: #e5e5e5
+					display: inline-block
+					width: 30px
+					height: 30px
+					line-height: 30px
+					margin-right: 10px
+					&:hover
+						background: $light-red-color
+					.fa
+						color: $white-color
+				.collection-deck-success
+					background: #008000
+	.back-img
+		display: none
+	.user
+		width: 80%
+		margin: 0 auto
+		text-align: left
+		padding-top: 10px
+		.img-circle
+			width: 50px
+			height: 50px
+			margin-right: 15px
+		.user-name
+			display: block
+			text-transform: uppercase
+			font-size: 0.9em
+			color: $black-color
+		.time
+			display: block
+			font-style: italic
+			font-size: 0.9em
+
+.cards-with-user .card-wrapper
+	height: 420px
+
+/**/
+/*modal sign up*/
+#signUpModal .modal-dialog
+	width: 40%
+	.modal-header
+		border: none
+		padding: 5px
+	.modal-content
+		border-radius: 0
+		.modal-body
+			border: none
+			.btn-full-width
+				width: 100%
+			.btn-red
+				display: block
+			.btn .fa
+				font-size: 1.4em
+			.separator
+				display: block
+				margin: 10px 0
+				text-align: center
+				color: $grey-color
+				font-family: KeepCalm-Medium
+			.term
+				display: block
+				padding-bottom: 20px
+				border-bottom: 1px solid  $light-grey-color
+				font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+				font-size: 0.7em
+				margin-top: 20px
+			.footer
+				font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+				font-size: 0.9em
+				padding-bottom: 20px
+				.btn
+					font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+					border-radius: 0
+					border: 1px solid $deep-red-color
+					color: $deep-red-color
+					&:hover
+						background: $deep-red-color
+						color: $white-color
+/*end of modal sign up*/
+#inspirqation-awits
+	background: url("../img/bg3.jpg") no-repeat center center
+	background-size: cover
+	height: 650px
+	width: 100%
+	display: table
+	.inner
+		display: table-cell
+		vertical-align: middle
+		text-align: center
+		color: white
+		h3
+			font-size: 4em
+		h6
+			font-size: 1em
+			margin: 20px 0
+		.btn
+			font-size: 1em
+
+.main-footer
+	background: #212121
+	color: white
+	padding: 25px 0 75px 0
+	.footer-menu
+		list-style: none
+		margin-bottom: 35px
+		padding: 0
+		li
+			font-size: 1em
+			a
+				color: white
+				text-decoration: none
+			&:hover
+				text-decoration: underline
+	.copyright
+		font-size: 0.7em
+
+	.follow-us-block
+		h5
+			font-size: 1em
+			text-transform: uppercase
+			margin-bottom: 15px
+		i.fa
+			font-size: 2em
+			margin-right: 10px
+			color: white
+			&:hover
+				color: $light-red-color
+
+	.newsletter-block
+		h5
+			font-size: 1em
+			text-transform: uppercase
+			margin-bottom: 15px
+		.newsletter-description
+			font-size: 1em
+			display: block
+			margin: 15px 0
+		.input-group
+			.form-control
+				height: 35px
+			.input-group-btn
+				font-size: 1em
+			.btn, input
+				border-radius: 0
+				height: 35px
+				font-size: 1em
+			.btn
+				background: $light-red-color
+				color: white
+				padding:  6px 25px
+
+
+/*autocomplete inputs*/
+.ui-menu
+	border: 2px solid #979797
+	border-top: 0
+	list-style: none
+	padding-left: 0
+	width: 300px
+	.ui-menu-item
+		background: #d2d2d2
+		padding: 5px
+
+.ui-helper-hidden-accessible
+	display: none
+
+/*addNewDeck*/
+.hide
+	display: none
+
+#addNewDeck
+	background: #f2f2f2
+	.box-images
+		background: url("../img/plus.png") center center no-repeat rgba(0,0,0,0.2)
+		height: 370px
+		text-align: center
+		padding-top: 30%
+		&:hover
+			cursor: pointer
+	.front-deck-img-prev, .back-deck-img-prev
+		display: none
+		height: 370px
+	.header-add-deck
+		padding-top: 30px
+		padding-bottom: 30px
+		input.form-control
+			background: none
+			border: 2px solid #979797
+			margin-top: 10px
+	#title-add-deck
+		color: white
+		background: #ac1e1e
+		.tab-item
+			padding: 30px
+	.main
+		padding: 30px 0
+		background: #d2d2d2
+		color: #000000
+		textarea
+			background: none
+			margin-top: 10px
+			margin-bottom: 30px
+			box-shadow: none
+			border-left: none
+			border-right: none
+			border-top: none
+			border-bottom: 2px solid black
+			border-radius: 0
+		input.form-control, select.form-control
+			background: none
+			border: 2px solid #979797
+			margin-top: 10px
+		.btn .fa
+			margin-right: 7px
+	#gallery-create-item-button
+		margin-top: 20px
+
+/*user page*/
+.user-header
+	background: #f2f2f2
+	.user-bg-header
+		width: 100%
+		height: 450px
+	.user-info
+		padding: 30px 0 50px 0
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+		.user-name
+			font-family: KeepCalm-Medium
+			font-size: 2.4em
+			text-transform: uppercase
+		.rank
+			font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+			font-size: 1.3em
+			text-transform: uppercase
+		.bio
+			font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+			font-size: 1.3em
+		.user-img
+			width: 150px
+			height: 150px
+			float: left
+			margin-right: 30px
+.user-collections-title
+	padding: 30px 0
+	color: $white-color
+
+.user-collections
+	background: #d2d2d2
+	h2
+		margin-bottom: 30px
+		padding-left: 15px
+	.user-collections-item-bg
+		background: rgba(0,0,0,0.6)
+		position: absolute
+		bottom: 0
+		width: 540px
+		height: 514px
+		display: none
+	.user-collections-item
+		display: block
+		position: relative
+		width: 540px
+		height: 514px
+		background: $white-color
+		margin-bottom: 50px
+		&:hover .user-collections-item-bg
+			display: block
+		.cards
+			.big-card, .small-card
+				text-align: center
+				vertical-align: middle
+				color: black
+			.big-card
+				width: 270px
+				height: 378px
+				line-height: 378px
+			.small-card
+				height: 168px
+				line-height: 168px
+			.grey-bg
+				background: #818181
+				.fa
+					font-size: 4em
+			.first-row
+				margin-bottom: 42px
+
+
+		.item-description-wrapper
+			.item-description
+				text-align: center
+				padding: 30px 0
+				h3
+					color: #000000
+				.decks-amount
+					color: $deep-red-color
+			.item-button
+				height: 136px
+				line-height: 136px
+				vertical-align: middle
+				text-align: center
+				.btn
+					width: 80%
+		.lock
+			background: #818181
+			color: #000000
+			height: 387px
+			line-height: 387px
+			vertical-align: middle
+			text-align: center
+			.fa
+				font-size: 3.5em
+		.lock-description-wrapper
+			height: 127px
+			background: $white-color
+			display: table
+			text-align: center
+			width: 100%
+			.lock-description
+				width: 100%
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+				.earn-more
+					display: block
+					color: $deep-red-color
+					text-transform: uppercase
+					&:hover
+						text-decoration: none
+				.unlock
+					text-transform: uppercase
+					display: inline-block
+					border-top: 1px solid
+					border-bottom:  1px solid
+					padding: 10px 0
+					margin-top: 10px
+					color: #d4d4d4
+
+/*collection list*/
+.collection-list
+	min-height: 300px
+	.collection-item
+		margin-top: 20px
+		margin-bottom: 20px
+		//width: 248px
+		height: 360px
+
+
+/*deck page*/
+.deck-page-header
+	background: #f2f2f2
+	padding-top: 20px
+	padding-bottom: 20px
+.deck-page-main
+	background: #d2d2d2
+	.deck-title
+		font-size: 1.25em
+		margin-top: 40px
+	.deck-main-info
+		padding: 40px 0
+		h1
+			margin-top: 0
+	.deck-tab
+		background: $deep-red-color
+		color: $white-color
+		padding: 15px 0
+	.deck-fields
+		border-top: 1px solid #000000
+		border-bottom: 1px solid #000000
+		padding: 40px 0
+		margin-bottom: 40px
+		.field-name
+			text-transform: uppercase
+			font-size: 1.25em
+			color: #777777
+			display: inline-block
+			margin-right: 10px
+		p
+			text-transform: uppercase
+			font-size: 1.25em
+		.expand
+			color: $deep-red-color
+	.deck-gallery
+		border-bottom: 1px solid #000000
+		padding: 0 0 40px 0
+		margin-bottom: 40px
+		h4
+			font-size: 1.25em
+			margin-bottom: 40px
+		.card-img
+			border-radius: 5%
+			width: 263px
+			height: 375px
+		#gallery-last-item
+			position: relative
+			display: block
+			.card-img
+				//width: 250px
+				//height: 365px
+				margin: 0 auto
+			.dark-bg
+				position: absolute
+				top: 0
+				background: rgba(0,0,0,0.6)
+
+				text-align: center
+				width: 263px
+				height: 375px
+				.see-all
+					color: $white-color
+					text-align: center
+					line-height: 375px
+					height: 375px
+					vertical-align: middle
+					font-size: 1.2em
+
+	.deck-numbers
+		margin-bottom: 40px
+		h4
+			font-size: 1.4em
+		.deck-number-item
+			display: inline-block
+			padding: 0 60px
+			border-right: 1px solid #000000
+			text-align: center
+			&:first-of-type
+				padding-left: 0
+			&:last-child
+				border-right: none
+			.number
+				display: block
+				font-size: 4.3em
+				color: $deep-red-color
+			.info
+				text-transform: uppercase
+	.recommendations-block
+		text-align: center
+		h4
+			text-transform: uppercase
+			padding: 25px 0
+			background: $white-color
+
+/**/
+
+/*search state*/
+.search-state-wrapper
+	overflow: hidden
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+	.search-state-icon, .title, .search-state-items
+		line-height: 54px
+	.search-state-icon
+		height: 30px
+		img
+			width: 30px
+			height: 30px
+	.title
+		font-weight: bold
+	.search-state-items
+		height: 54px
+		overflow: hidden
+
+/**/
+/*table tile view icons*/
+#search-form
+	display: inline-block
+	margin: 10px 0
+	input[type = "submit"]
+		display: none
+.view-icons
+	.fa
+		font-size: 2.5em
+		color: $white-color
+		margin: 0 7px
+		&.black
+			color: $black-color
+	.view-icon
+		vertical-align: middle
+		&:hover
+			cursor: pointer
+			color: $deep-red-color
+		&.active
+			color: $deep-red-color
+/**/
+/*list view*/
+.list-items
+	display: none
+/*end of list view*/
+
+/*colorbox*/
+.lightbox-items .collection-card-lightbox
+	display: none
+
+#cboxOverlay
+	background: rgba(0,0,0, 0.7)
+
+#colorbox, #cboxOverlay, #cboxWrapper
+	overflow: unset
+#colorbox
+	.collection-card-lightbox .back-image
+		display: none /*hide back image for colorbox*/
+		position: absolute
+		top: 0
+	#cboxLoadedContent
+		border: none
+	#cboxClose
+		color: $black-color
+		font-size: 2em
+		right: 10px
+		text-indent: 0
+		top: 10px
+	#cboxCurrent
+		display: none
+	#cboxNext, #cboxPrevious
+		text-indent: 0
+		width: 45px
+		height: 45px
+		line-height: 45px
+		vertical-align: middle
+		background: #696969
+		color: #444444
+		font-size: 1.8em
+		border: none
+	#cboxNext
+		right: -50px
+	#cboxPrevious
+		left: -50px
+
+
+//#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose
+//	text-indent: 0
+//
+//#colorbox
+//	z-index: 5
+//	#cboxLoadedContent
+//		background: $white-color
+//		border: none
+//		.collection-card-info
+//			display: block
+//		.front-img
+//			display: block
+//	#cboxClose
+//		top: 0
+//		right: 0
+//	#cboxNext, #cboxPrevious, #cboxClose
+//		position: absolute
+//		width: 45px
+//		height: 45px
+//		line-height: 45px
+//		vertical-align: middle
+//		background: $white-color
+//		font-size: 1.8em
+//		border: none
+//	#cboxNext
+//		right: -45px
+//		top: calc(50% - 45px)
+//		//background: none
+//	#cboxPrevious
+//		left: -45px
+//		top: calc(50% - 45px)
+//		//background: none
+
+
+/*deck info block for deck-page and deck lightbox*/
+.border-top-grey
+	border-top: 1px solid $grey-color
+.border-bottom-grey
+	border-bottom: 1px solid $grey-color
+
+.deck-info-wrapper
+	.social-links
+		position: relative
+		left: 0
+		& > a
+			display: inline-block
+	.deck-info
+		padding: 0 25px
+		h1
+			font-size: 2em
+			margin:  20px 0 20px 0
+			text-transform: uppercase
+		h4
+			font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+			font-size: 1.25em
+			margin-bottom: 20px
+		.rating
+			padding: 15px 0
+			font-size: 1em
+			font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+			.stars
+				display: block
+				margin: 15px 0
+			.description
+				font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+				font-size: 1em
+				height: 100px
+				overflow: hidden
+		.portfolio-section
+			padding-bottom: 20px
+			min-height: 140px
+		.notes
+			h2
+				font-size: 2em
+			h4
+				font-weight: bold
+			textarea
+				background: #ededed
+				border: none
+				border-radius: 0
+				height: 100px
+			.save
+				margin-top: 10px
+				background: #a1a1a1
+				color: $white-color
+				border-radius: 0
+				border: none
+				box-shadow: none
+				font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+	.btn-red
+		font-size: 1.3em
+		margin: 15px 0
+
+.deck-info-wrapper .deck-info
+	padding-top: 0
+
+/*animated icons large*/
+#animated-icons.animated-icons-large
+	.animated-icon-item
+		min-height: 130px
+		&.disabled
+			color: $light-grey-color
+			.adding
+				background: url("../img/animated-icon-disabled.png") right center no-repeat
+				.number
+					color: $grey-color
+		.adding
+			height: 100px
+			text-align: center
+			line-height: 100px
+			vertical-align: middle
+			padding-right: 43px
+			background: url("../img/animated-icon.png") right center no-repeat
+			&:hover
+				cursor: pointer
+				background: url("../img/animated-icon-hover.png") right center no-repeat
+			&.active
+				background: url("../img/animated-icon-active.png") right center no-repeat
+			.number
+				font-size: 4.2em
+				color: $deep-red-color
+		.deleting
+			.description
+				line-height: 50px
+				font-size: 15px
+			.fa-minus
+				font-size: 50px
+				&:hover
+					color: $deep-red-color
+					cursor: pointer
+				&.active
+					color: $black-color
+
+/*small animated icons for list view*/
+#animated-icons.animated-icons-small
+	.animated-icon-item
+		min-height: 60px
+		&.disabled
+			.adding
+				color: #cecece
+				background: url("../img/animated-icon-disabled.png") right center no-repeat
+				background-size: 20% 75%
+				.number
+					color: #aaaaaa
+					text-align: right
+					padding-right: 35px
+			.deleting
+				.description
+					color: #aaaaaa
+				.fa-minus
+					color: #aaaaaa
+		.adding
+			height: 50px
+			line-height: 50px
+			padding-right: 20px
+			background: url("../img/animated-icon.png") right center no-repeat
+			background-size: 20% 75%
+			&:hover
+				background: url("../img/animated-icon-hover.png") right center no-repeat
+				background-size: 20% 75%
+			&.active
+				background: url("../img/animated-icon-active.png") right center no-repeat
+				background-size: 20% 75%
+			.number
+				font-size: 2.2em
+				font-weight: bold
+				color: $deep-red-color
+				text-align: right
+				padding-right: 35px
+		.deleting
+			.description
+				line-height: 35px
+				font-size: 9px
+				text-transform: uppercase
+			.fa-minus
+				font-size: 25px
+				&:hover
+					color: $deep-red-color
+					cursor: pointer
+					&.active
+						color: $black-color
+/**/
+
+/*end of deck info block for deck-page and deck lightbox*/
+
+/*search page*/
+.search-page
+	.search-page-header
+		background: url("../img/bg4.jpg") center center no-repeat
+		background-size: cover
+		text-align: center
+		.inspiration-wrapper
+			display: table
+			width: 100%
+			height: 500px
+		.inner
+			display: table-cell
+			vertical-align: middle
+			h3
+				margin-bottom: 35px
+			.btn-red
+				margin-top: 20px
+	.search-page-main-tabs
+		background: #d2d2d2
+		.description-tabs
+			margin: 0 auto
+			padding: 5px 0
+			width: 40%
+			text-align: center
+			margin-bottom: 15px
+		/*filter and discover tabs*/
+		.search-page-main-tabs-inner
+			min-height: 65px
+			.search-main-tab-item
+				background: $white-color
+				padding: 15px 30px
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+				&.active
+					background: $deep-red-color
+					color: $white-color
+					display: block
+		/*inner tabs with colors e.t.c*/
+		.search-page-filter-tabs
+			background: #d2d2d2
+			.nav-tabs
+				background: $white-color
+				border-bottom: none
+				.tab
+					width: 20%
+					text-align: center
+					display: block
+					float: left
+					background: $white-color
+					border-right: 1px solid $grey-color
+					//padding: 20px 0
+					margin-bottom: auto
+					&:last-child
+						border-right: none
+					& > a
+						color: $black-color
+						border: none
+						padding: 20px 0
+						&:hover
+							background: none
+					&.active, &:hover
+						background: $deep-red-color
+						cursor: pointer
+						& > a
+							color: $white-color
+							background: none
+							border: none
+
+			.tab-content
+				padding: 25px 0
+				.search-filter-item
+					height: 100px
+					line-height: 100px
+					border: 2px solid #242021
+					float: left
+					text-align: center
+					&.active
+						background: $deep-red-color
+						color: $white-color
+				/*special design for different tabs*/
+				#tuck-items-wrapper
+					width: 70%
+					margin: 0 auto
+					.tuck-item-design
+						float: left
+						width: 50%
+				#stock-items-wrapper, #style-items-wrapper
+					width: 70%
+					margin: 0 auto
+					.stock-item-design, .style-item-design
+						float: left
+						width: 40%
+						margin-right: 10%
+				/*search string field*/
+		#SEARCH-STRING
+			margin-top: 20px
+			padding: 40px 0
+			text-align: center
+			#search-string-field
+				display: inline-block
+				width: 40%
+				//background: transparent url("../img/magnifier.png") no-repeat scroll 10px 6px
+				background: transparent
+				border: 1px solid $grey-color
+				border-radius: 45px
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset
+				color: #000000
+				//display: inline-block
+				height: 70px
+				line-height: 0
+				padding: 6px 15px 6px 35px
+				text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1)
+
+/*list view*/
+.list-item
+	margin: 7px
+	padding: 0
+	&:hover
+		background: #cacaca
+	.deck-title
+		display: block
+		margin-bottom: 20px
+		font-weight: bold
+		text-transform: uppercase
+	.notes
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+		font-weight: 300
+/*end of search page*/
+
+
+/*social links in collections*/
+.social-links
+	left: -40px
+	position: absolute
+	top: 20px
+	a:hover
+		text-decoration: none
+	.fa
+		display: block
+		width: 40px
+		height: 40px
+		line-height: 40px
+		vertical-align: middle
+		text-align: center
+		font-size: 20px
+		background: $grey-color
+		color: $light-grey-color
+		border-radius: 4px
+		margin-bottom: 5px
+		&:hover
+			cursor: pointer
+			background: $deep-red-color
+			text-decoration: none
+
+
+/*register panel*/
+#register-panel, #login-panel, #profile-edit-panel
+	margin: 20px 0
+
+@media (max-width: 767px)
+	html body
+		font-size: 10px
+
+	body
+		margin-bottom: 0 !important /*remove sticky footer for mobile*/
+
+	.btn-red
+		padding: 5px
+		font-size: 10px
+	/*main page*/
+	.main-header
+		background: rgba(0, 0, 0, 0) url("../img/bg1-mobile.jpg") no-repeat scroll center center
+		background-size: cover
+
+	.main
+		background: #d2d2d2 url("../img/bg2-mobile.jpg") no-repeat scroll center top
+		background-size: cover
+
+	#inspirqation-awits
+		background: rgba(0, 0, 0, 0) url("../img/bg3-mobile.jpg") no-repeat scroll center center
+		background-size: cover
+
+	.main .main-numbers .numbers-item .number
+		font-size: 3em
+
+	#signUpModal .modal-dialog
+		width: 90%
+
+	//#colorbox, #cboxContent, #cboxLoadedContent
+	//	width: 100% !important
+	/**/
+
+	/*profile*/
+	.user-collections .user-collections-item
+		width: auto
+		height: auto
+
+	.user-collections .user-collections-item .cards .big-card
+		width: 50%
+		height: auto
+
+	.user-collections .user-collections-item .cards .small-card
+		line-height: 85px
+		height: 85px
+
+	.user-collections .user-collections-item-bg
+		display: none
+	/**/
+	.user-header .user-bg-header
+		height: auto
+	.search-page .search-page-main-tabs .search-page-main-tabs-inner .search-main-tab-item
+		text-align: center
+		h5
+			float: none !important /*remove bootstrap pull-right*/
+	.cards .card-wrapper
+		margin-bottom: 50px
+		height: auto
+	.cards .user
+		padding-top: 30px
+
+	footer
+		position: relative
+		height: auto
+
+
+@media (max-width: 992px)
+	.main-header
+		background: rgba(0, 0, 0, 0) url("../img/bg1-laptop.jpg") no-repeat scroll center center
+		background-size: cover
