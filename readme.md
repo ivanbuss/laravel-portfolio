@@ -1,6 +1,4 @@
-# Portfolio 52
-
-Portfolio52 is a platform built for the card collecting community. Share your passions for cards with others, manage your collections, and discover new decks all in one place. We see playing cards as an art and look to share our art with others.
+# Laravel
 
 ## Deploy
 Install Docker and Docker compose
